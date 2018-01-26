@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promise example</title>
+  <script src="promise-service.js"></script>
+  <style>
+    div {
+      margin-top: 20px;
+    }
+    #error {
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+    }
+    #success {
+      font-size: 11px;
+      background-color: azure;
+      color: #666666;
+      padding: 15px 10px;
+    }
+    #success, #error {
+      display: none;
+    }
+    .show {
+      display: block !important;
+    }
+    article {
+      padding: 10px 10px;
+    }
+    #image {
+      width: 90vw;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Nasa newsletter</h1>
+  <button type="button" onclick="getArticle()">Get Nasa article</button>
+  <div id="success">
+    <article>
+      <h1 id="title"></h1>
+      <label id="date"></label>
+      <p id="explanation"></p>
+      <img id="image" src="" alt="">
+    </article>
+  </div>
+  <div id="error"></div>
+  <script src="main.js"></script>
+  
+</body>
+</html>

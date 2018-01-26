@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrays</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    section {
+      width: 500px;
+      padding: 10px;
+      border: 1px solid #666666;
+      border-radius: 2%;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: azure;
+      overflow: scroll;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome, inpsect your console</h1>
+  <section>
+    <h2>Search a fruit</h2>
+    <input type="text" id="fruit" maxlength="20">
+    <button type="button" onclick="searchFruit(document.getElementById('fruit').value)">Buscar</button>
+    <div class="container">
+      <h3>Fruits</h3>
+      <ul>
+        <li>1 -
+          <a href="https://en.wikipedia.org/wiki/Apple" title="Apple">Apple</a>
+        </li>
+        <li>2 -
+          <a href="https://en.wikipedia.org/wiki/Apricot" title="Apricot">Apricot</a>
+        </li>
+        <li>3 -
+          <a href="https://en.wikipedia.org/wiki/Avocado" title="Avocado">Avocado</a>
+        </li>
+        <li>4 -
+          <a href="https://en.wikipedia.org/wiki/Banana" title="Banana">Banana</a>
+        </li>
+        <li>5 -
+          <a href="https://en.wikipedia.org/wiki/Bilberry" title="Bilberry">Bilberry</a>
+        </li>
+        <li>6 -
+          <a href="https://en.wikipedia.org/wiki/Blackberry" title="Blackberry">Blackberry</a>
+        </li>
+        <li>7 -
+          <a href="https://en.wikipedia.org/wiki/Blackcurrant" title="Blackcurrant">Blackcurrant</a>
+        </li>
+        <li>8 -
+          <a href="https://en.wikipedia.org/wiki/Blueberry" title="Blueberry">Blueberry</a>
+        </li>
+        <li>9 -
+          <a href="https://en.wikipedia.org/wiki/Boysenberry" title="Boysenberry">Boysenberry</a>
+        </li>
+        <li>10 -
+          <a href="https://en.wikipedia.org/wiki/Buddha%27s_hand" title="Buddha's hand">Buddha's hand</a>
+        </li>
+        <li>11 -
+          <a href="https://en.wikipedia.org/wiki/Cherimoya" title="Cherimoya">Cherimoya</a>
+        </li>
+        <li>12 -
+          <a href="https://en.wikipedia.org/wiki/Cherry" title="Cherry">Cherry</a>
+        </li>
+        <li>13 -
+          <a href="https://en.wikipedia.org/wiki/index.php?title=Chico_fruit&amp;action=edit&amp;redlink=1" class="new" title="Chico fruit (not yet started)">Chico fruit</a>
+        </li>
+        <li>14 -
+          <a href="https://en.wikipedia.org/wiki/Cloudberry" title="Cloudberry">Cloudberry</a>
+        </li>
+        <li>15 -
+          <a href="https://en.wikipedia.org/wiki/Coconut" class="mw-redirect" title="Coconut">Coconut</a>
+        </li>
+        <li>16 -
+          <a href="/w/index.php?title=Crab_apples&amp;action=edit&amp;redlink=1" class="new" title="Crab apples (not yet started)">Crab apples</a>
+        </li>
+        <li>17 -
+          <a href="https://en.wikipedia.org/wiki/Cranberry" title="Cranberry">Cranberry</a>
+        </li>
+        <li>18 -
+          <a href="https://en.wikipedia.org/wiki/Cucumber" title="Cucumber">Cucumber</a>
+        </li>
+        <li>19 -
+          <a href="https://en.wikipedia.org/wiki/Currant" class="mw-redirect" title="Currant">Currant</a>
+        </li>
+        <li>20 -
+          <a href="/w/index.php?title=Custard_apple&amp;action=edit&amp;redlink=1" class="new" title="Custard apple (not yet started)">Custard apple</a>
+        </li>
+        <li>21 -
+          <a href="https://en.wikipedia.org/wiki/Damson" title="Damson">Damson</a>
+        </li>
+        <li>22 -
+          <a href="https://en.wikipedia.org/wiki/Date_palm" class="mw-redirect" title="Date palm">Date</a>
+        </li>
+        <li>23 -
+          <a href="https://en.wikipedia.org/wiki/Dragonfruit" title="Dragonfruit">Dragonfruit</a>
+        </li>
+        <li>24 -
+          <a href="https://en.wikipedia.org/wiki/Durian" title="Durian">Durian</a>
+        </li>
+        <li>25 -
+          <a href="https://en.wikipedia.org/wiki/Elderberry" title="Elderberry">Elderberry</a>
+        </li>
+        <li>26 -
+          <a href="https://en.wikipedia.org/wiki/Feijoa" title="Feijoa">Feijoa</a>
+        </li>
+        <li>27 -
+          <a href="https://en.wikipedia.org/wiki/Fig" title="Fig">Fig</a>
+        </li>
+        <li>28 -
+          <a href="https://en.wikipedia.org/wiki/Goji_berry" class="mw-redirect" title="Goji berry">Goji berry</a>
+        </li>
+        <li>29 -
+          <a href="https://en.wikipedia.org/wiki/Gooseberry" title="Gooseberry">Gooseberry</a>
+        </li>
+        <li>30 -
+          <a href="https://en.wikipedia.org/wiki/Grape" title="Grape">Grape</a>
+        </li>
+        <li>31 -
+          <a href="https://en.wikipedia.org/wiki/Grapefruit" title="Grapefruit">Grapefruit</a>
+        </li>
+        <li>32 -
+          <a href="https://en.wikipedia.org/wiki/Guava" title="Guava">Guava</a>
+        </li>
+        <li>33 -
+          <a href="https://en.wikipedia.org/wiki/Honeyberry" title="Honeyberry">Honeyberry</a>
+        </li>
+        <li>34 -
+          <a href="https://en.wikipedia.org/wiki/Huckleberry" title="Huckleberry">Huckleberry</a>
+        </li>
+        <li>35 -
+          <a href="https://en.wikipedia.org/wiki/Jabuticaba" title="Jabuticaba">Jabuticaba</a>
+        </li>
+        <li>36 -
+          <a href="https://en.wikipedia.org/wiki/Jackfruit" title="Jackfruit">Jackfruit</a>
+        </li>
+        <li>37 -
+          <a href="https://en.wikipedia.org/wiki/Jambul" title="Jambul">Jambul</a>
+        </li>
+        <li>38 -
+          <a href="https://en.wikipedia.org/wiki/Jujube" title="Jujube">Jujube</a>
+        </li>
+        <li>39 -
+          <a href="https://en.wikipedia.org/wiki/Juniper_berry" title="Juniper berry">Juniper berry</a>
+        </li>
+        <li>40 -
+          <a href="/w/index.php?title=Kiwano&amp;action=edit&amp;redlink=1" class="new" title="Kiwan">Kiwano</a>
+        </li>
+        <li>41 -
+          <a href="https://en.wikipedia.org/wiki/Kiwifruit" title="Kiwifruit">Kiwifruit</a>
+        </li>
+        <li>42 -
+          <a href="https://en.wikipedia.org/wiki/Kumquat" title="Kumquat">Kumquat</a>
+        </li>
+        <li>43 -
+          <a href="https://en.wikipedia.org/wiki/Lemon" title="Lemon">Lemon</a>
+        </li>
+        <li>44 -
+          <a href="https://en.wikipedia.org/wiki/Lime" title="Lime">Lime</a>
+        </li>
+        <li>45 -
+          <a href="https://en.wikipedia.org/wiki/Loquat" title="Loquat">Loquat</a>
+        </li>
+        <li>46 -
+          <a href="/w/index.php?title=Longan&amp;action=edit&amp;redlink=1" class="new" title="Longan (not yet started)">Longan</a>
+        </li>
+        <li>47 -
+          <a href="https://en.wikipedia.org/wiki/Lychee" title="Lychee">Lychee</a>
+        </li>
+        <li>48 -
+          <a href="https://en.wikipedia.org/wiki/Mango" title="Mango">Mango</a>
+        </li>
+        <li>49 -
+          <a href="https://en.wikipedia.org/wiki/Mangosteen" class="mw-redirect" title="Mangosteen">Mangosteen</a>
+        </li>
+        <li>50 -
+          <a href="https://en.wikipedia.org/wiki/Marionberry" title="Marionberry">Marionberry</a>
+        </li>
+        <li>51 -
+          <a href="https://en.wikipedia.org/wiki/Melon" title="Melon">Melon</a>
+        </li>
+        <li>52 -
+          <a href="https://en.wikipedia.org/wiki/Miracle_fruit" title="Miracle fruit">Miracle fruit</a>
+        </li>
+        <li>53 -
+          <a href="https://en.wikipedia.org/wiki/Mulberry" title="Mulberry">Mulberry</a>
+        </li>
+        <li>54 -
+          <a href="https://en.wikipedia.org/wiki/Nectarine" class="mw-redirect" title="Nectarine">Nectarine</a>
+        </li>
+        <li>55 -
+          <a href="https://en.wikipedia.org/wiki/Nance" title="Nance">Nance</a>
+        </li>
+        <li>56 -
+          <a href="https://en.wikipedia.org/wiki/Olive_(fruit)" title="Olive (fruit)">Olive</a>
+        </li>
+        <li>57 -
+          <a href="https://en.wikipedia.org/wiki/Orange_(fruit)" title="Orange (fruit)">Orange</a>
+        </li>
+        <li>58 -
+          <a href="https://en.wikipedia.org/wiki/Papaya" title="Papaya">Papaya</a>
+        </li>
+        <li>59 -
+          <a href="https://en.wikipedia.org/wiki/Passionfruit" title="Passionfruit">Passionfruit</a>
+        </li>
+        <li>60 -
+          <a href="https://en.wikipedia.org/wiki/Peach" title="Peach">Peach</a>
+        </li>
+        <li>61 -
+          <a href="https://en.wikipedia.org/wiki/Pear" title="Pear">Pear</a>
+        </li>
+        <li>62 -
+          <a href="https://en.wikipedia.org/wiki/Persimmon" title="Persimmon">Persimmon</a>
+        </li>
+        <li>63 -
+          <a href="https://en.wikipedia.org/wiki/Plantain" title="Plantain">Plantain</a>
+        </li>
+        <li>64 -
+          <a href="https://en.wikipedia.org/wiki/Plum" title="Plum">Plum</a>
+        </li>
+        <li>65 -
+          <a href="https://en.wikipedia.org/wiki/Pineapple" title="Pineapple">Pineapple</a>
+        </li>
+        <li>66 -
+          <a href="https://en.wikipedia.org/wiki/Plumcot" title="Plumcot">Plumcot</a> (or Pluot)</li>
+        <li>67 -
+          <a href="https://en.wikipedia.org/wiki/Pomegranate" title="Pomegranate">Pomegranate</a>
+        </li>
+        <li>68 -
+          <a href="https://en.wikipedia.org/wiki/Pomelo" title="Pomelo">Pomelo</a>
+        </li>
+        <li>69 -
+          <a href="https://en.wikipedia.org/wiki/Purple_mangosteen" title="Purple mangosteen">Purple mangosteen</a>
+        </li>
+        <li>70 -
+          <a href="https://en.wikipedia.org/wiki/Quince" title="Quince">Quince</a>
+        </li>
+        <li>71 -
+          <a href="https://en.wikipedia.org/wiki/Raspberry" title="Raspberry">Raspberry</a>
+        </li>
+        <li>72 -
+          <a href="https://en.wikipedia.org/wiki/Rambutan" title="Rambutan">Rambutan</a>
+        </li>
+        <li>73 -
+          <a href="https://en.wikipedia.org/wiki/Redcurrant" title="Redcurrant">Redcurrant</a>
+        </li>
+        <li>74 -
+          <a href="https://en.wikipedia.org/wiki/Salal" title="Salal">Salal</a> berry</li>
+        <li>75 -
+          <a href="https://en.wikipedia.org/wiki/Salak" title="Salak">Salak</a>
+        </li>
+        <li>76 -
+          <a href="https://en.wikipedia.org/wiki/Satsuma" title="Satsuma">Satsuma</a>
+        </li>
+        <li>77 -
+          <a href="https://en.wikipedia.org/wiki/Soursop" title="Soursop">Soursop</a>
+        </li>
+        <li>78 -
+          <a href="https://en.wikipedia.org/wiki/Star_fruit" class="mw-redirect" title="Star fruit">Star fruit</a>
+        </li>
+        <li>79 -
+          <a href="/w/index.php?title=Gonzoberry&amp;action=edit&amp;redlink=1" class="new" title="Gonzoberry (not yet started)">gonzoberry</a>
+        </li>
+        <li>80 -
+          <a href="https://en.wikipedia.org/wiki/Strawberry" title="Strawberry">Strawberry</a>
+        </li>
+        <li>81 -
+          <a href="https://en.wikipedia.org/wiki/Tamarillo" title="Tamarillo">Tamarillo</a>
+        </li>
+        <li>82 -
+          <a href="https://en.wikipedia.org/wiki/Tamarind" title="Tamarind">Tamarind</a>
+        </li>
+        <li>83 -
+          <a href="https://en.wikipedia.org/wiki/Ugli_fruit" title="Ugli fruit">Ugli fruit</a>
+        </li>
+        <li>84 -
+          <a href="https://en.wikipedia.org/wiki/Yuzu" title="Yuzu">Yuzu</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
