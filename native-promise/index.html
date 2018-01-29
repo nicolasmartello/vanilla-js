@@ -10,6 +10,22 @@
     div {
       margin-top: 20px;
     }
+    .code-container {
+      width: 65%;
+      height: 300px;
+      overflow: scroll;
+      margin: 10px;
+      padding: 0 10px;
+      padding-bottom: 10px;
+      background-color: black;
+      color:chartreuse;
+      border: 1px #666666 solid;
+      border-radius: 2%;
+    }
+    .code-container h4 {
+      text-align: center;
+      margin-top: 5px;
+    }
     #error {
       font-size: 16px;
       background-color: red;
@@ -49,7 +65,15 @@
     </article>
   </div>
   <div id="error"></div>
-  <script src="main.js"></script>
+
+  <section class="code-container">
+    <h4>Await / promise</h4>
+    <code id="awaitExample">
+
+    </code>
+  </section>
   
+  <script src="main.js"></script>
+  <script src="await-async.js"></script>
 </body>
 </html>
